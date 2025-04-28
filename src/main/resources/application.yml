@@ -1,3 +1,10 @@
 spring:
   application:
     name: artline-be
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  profiles:
+    active: dev
